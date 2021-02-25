@@ -1,0 +1,211 @@
+*{ box-sizing: border-box;
+margin: 0px; 
+padding: 0px; 
+  
+}
+body{ background: #272727;
+color: #fff; 
+height: 100vh; 
+font-family: 'Segoe UI';
+line-height: 1;
+}
+a{ color:#fff; 
+text-decoration: none;
+}
+header{ position: fixed; 
+z-index: 0; 
+width: 100;
+padding: 1rem;
+}
+main{ width: 100%; 
+height: 100%;
+} 
+ .social-icons{ position: fixed;
+bottom: 1rem;
+} 
+  i:hover{ padding: 0.4rem;
+      color: orange;
+      left: 1rem; 
+transition: all 0.5s ease-in-out;
+        } 
+footer{ font-size: 1rem; 
+position: fixed;
+bottom:0.2rem;
+right: 0rem;
+text-align: right;
+padding: 1rem; 
+color: #fff; 
+} 
+.menu_btn{
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: -1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+   .menu_btn_buger{
+      position: absolute;
+      right: 0rem;
+      top: 0.5rem;
+      width: 28px;
+      height: 3px;
+      background-color: #fff ;
+      transition: all 0.5s ease-in-out;
+    }
+    .menu_btn_buger::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+    .menu_btn_buger::after{
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 28px;
+      height: 3px;
+      background: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+    .menu_btn_buger.open{
+      transform:rotate(720deg) ;
+      background: transparent;
+    }
+    .menu_btn_buger.open::before{
+      transform: rotate(45deg) translate(5px,8px) ;
+    }
+    .menu_btn_buger.open::after{
+      transform: rotate(-45deg) translate(3px,-7px) ;
+    }
+    .nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width:100vw ;
+      opacity: 0.98;
+      visibility: hidden;
+    }
+ .nav.open{
+      visibility: visible;
+ }
+    .menu_nav{
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    overflow: hidden;
+      height: 100vh;
+      background:#272727 ;
+      list-style-type: none;
+      padding-right: 1rem;
+      transform: translateY(-100%);
+      transition: all 0.5s ease-in-out;
+    }
+    .menu_nav.open{
+      transform: translateY(0);
+    }
+    .menu_nav_item{
+    transform: translateX(100vh); 
+    transition: all 0.5s ease-in-out;
+    }
+    .menu_nav_item.open{
+      transform: translateX(0);
+    }
+    .menu_nav_item.active > a{
+      color:orange;
+    }
+    .menu_nav_link{
+      display: inline-block;
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding: 2rem 0;
+      font-weight: 300;
+      transition: all 0.5s ease-in-out;
+      
+    }
+    .menu_nav_link:hover{
+      color: white;
+    }
+    .flex1{
+    
+      display: flex;
+    }
+  .image-container {
+         margin: 0 auto; /* center the image containers */
+         width: 80%;
+         box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22); /* material box shadow */
+         margin-bottom: 20px;
+         transition-duration: 1s;
+         border-radius: 12px;
+         margin: 0.3rem;
+         padding: 0.5rem;
+    
+      }
+      .image-container:hover {
+         width: 90%;
+         box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      }
+      /* make the images responsive */
+      img {
+         width: 100%;
+         height: auto;
+      }
+      .image-description {
+         padding: 0 15px 15px 15px;
+         text-align: center;
+      }
+      
+      /* lightbox stylesheet */
+      .lightbox {
+         display: table; /* helps us center the lightbox-content */
+         transition-duration: 1s; /* duration of the fade in effect */
+         
+         /* make the lightbox occupy the entire page */
+         position: fixed;
+         top: -100%; /* hide the lightbox above the top edge */
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.7); /* black with 0.7 opacity */
+      }
+      .lightbox:target {
+         top: 0; /* make the lightbox cover the entire page */
+      }
+      .lightbox-content {
+         display: table-cell;
+         vertical-align: middle; /* vertically center */
+         text-align: center; /* horizontally center */
+      }
+      .close {
+         /* position the CLOSE button to the top-right corner */
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         
+         /* style the close button */
+         font-size: 20px;
+         font-weight: 300;
+         text-decoration: none;
+         color: white;
+      }
+      
+      /* make the image responsive */
+      .lightbox img {
+         max-width: 100%;
+         height: auto;
+      }
+      .wel{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 1rem;
+      font-family: Sans-Serif;
+      }
+      .welp{
+        color: orange;
+      }
