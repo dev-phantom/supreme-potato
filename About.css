@@ -1,4 +1,4 @@
-*{ box-sizing: border-box;
+Hi*{ box-sizing: border-box;
 margin: 0px; 
 padding: 0px; 
   
@@ -134,7 +134,7 @@ color: orange;
     }
 .content{
   height: 300px;
-  width: auto;
+  width: available;
   overflow: hidden;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -174,7 +174,7 @@ article {
   @media only screen and (min-width: 480px) {
     .content{
   height: 700px;
-  width: 768px;
+  width: available;
   overflow: hidden;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -194,7 +194,7 @@ article{
 }
  @media only screen and (min-width: 1024px) {.content{
   height: 900px;
-  width: auto;
+  width: available;
   overflow: hidden;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
