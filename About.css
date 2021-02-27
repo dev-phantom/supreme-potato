@@ -134,7 +134,7 @@ color: orange;
     }
 .content{
   height: 300px;
-  width: 358px;
+  width: auto;
   overflow: hidden;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -194,7 +194,7 @@ article{
 }
  @media only screen and (min-width: 1024px) {.content{
   height: 900px;
-  width: 1360px;
+  width: auto;
   overflow: hidden;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
