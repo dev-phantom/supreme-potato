@@ -143,14 +143,14 @@ opacity: 0.2px;
       color: white;
     }
   .welcome{
-    font-size: 50px;
+    font-size: 90px;
     font-weight: bolder;
   }
   .unli{
     border-width: 3px;
     border-style: solid;
     border-color: orange;
-    width: 300px;
+    width: auto;
     margin-top: 1rem;
     margin-left: 25px;
    
@@ -203,7 +203,7 @@ opacity: 0.2px;
     border-width: 3px;
     border-style: solid;
     border-color: orange;
-    width: 700px;
+    width: auto;
     margin-top: 1rem;
     margin-left: 25px;
    
@@ -214,7 +214,7 @@ opacity: 0.2px;
     border-width: 3px;
     border-style: solid;
     border-color: orange;
-    width: 2000px;
+    width: auto;
     margin-top: 1rem;
     margin-left: 25px;
       }
