@@ -153,4 +153,6 @@ h2{
   grid-template-columns: 2fr;
   grid-gap: .5rem;
   font-size: 20px;
+Padding:1rem;
+Margin:1rem;
 }
